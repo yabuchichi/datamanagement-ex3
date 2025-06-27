@@ -21,6 +21,12 @@ public class DiceGame{
     System.out.println("Die 2: " + dice2);
     System.out.println("Total value: " + total);
 
+    
+    if(total >= 8){
+      System.out.println("You won !");
+    }else{
+      System.out.println("You lost !");
+    }
     scanner.close();
   }
 }
