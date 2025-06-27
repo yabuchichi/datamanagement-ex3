@@ -1,7 +1,15 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class DiceGame{
   public static void main(String[] args){
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.print("What is your name? ");
+    String name = scanner.nextLine();
+    
+    System.out.println("Hello, " + name + "!");
+    
     Random rand = new Random();
 
     System.out.println("Rolling dice...");
@@ -12,5 +20,7 @@ public class DiceGame{
     System.out.println("Die 1: " + dice1);
     System.out.println("Die 2: " + dice2);
     System.out.println("Total value: " + total);
+
+    scanner.close();
   }
 }
