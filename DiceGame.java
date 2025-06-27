@@ -5,7 +5,7 @@ public class DiceGame{
   public static void main(String[] args){
     Scanner scanner = new Scanner(System.in);
     
-    System.out.print("What is your name? ");
+    System.out.println("What is your name? ");
     String name = scanner.nextLine();
     
     System.out.println("Hello, " + name + "!");
@@ -23,9 +23,9 @@ public class DiceGame{
 
     
     if(total >= 8){
-      System.out.println(name + " won !");
+      System.out.println(name + " won!");
     }else{
-      System.out.println(name + " lost !");
+      System.out.println(name + " lost!");
     }
     scanner.close();
   }
